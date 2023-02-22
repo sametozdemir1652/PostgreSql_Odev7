@@ -1,0 +1,17 @@
+Select rating, title From film
+Group By rating, title;
+
+
+Select replacement_cost, Count(title) From film
+Group By replacement_cost
+Having Count(title)>50;
+
+
+Select store_id, Count(customer_id) From customer
+Group By store_id;
+
+
+Select country_id, Count(city) From city
+Group By country_id
+Order By Count(city) Desc
+Limit 1;
